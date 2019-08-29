@@ -1,21 +1,13 @@
-if not __name__.endswith("sample_config"):
-    import sys
-    print("The README is there to be read. Extend this sample config to a config file, don't just rename and change "
-          "values here. Doing that WILL backfire on you.\nBot quitting.", file=sys.stderr)
-    quit(1)
-
-
-# Create a new config.py file in same dir and import, then extend this class.
 class Config(object):
     LOGGER = True
 
     # REQUIRED
     API_KEY = ""
-    OWNER_ID = "721198993"  # If you dont know, run the bot and do /id in your private chat with it
-    OWNER_USERNAME = "Prakaska"
+    OWNER_ID = "596368682"  # If you dont know, run the bot and do /id in your private chat with it
+    OWNER_USERNAME = "Arman_xD"
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = 'postgres://tdexkzqhkojmia:d7b7a56d7c3c18bf7f6428304958b88a8342b1757773965fdb6af62072ef13df@ec2-54-247-70-127.eu-west-1.compute.amazonaws.com:5432/d3ttt3hr63j4b2'  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = 'postgres://evjwrjcdishzwz:6f81aaaf6235bc2a45651e7e5ad955039f372cd9b39ec6042e7c277324dc3ce7@ec2-23-21-156-171.compute-1.amazonaws.com:5432/d6krgja6gi5h24'  # needed for any database modules
     MESSAGE_DUMP = -1001349863386 # needed to make sure 'save from' messages persist
     LOAD = []
     NO_LOAD = ['translation', 'sed']
@@ -23,9 +15,9 @@ class Config(object):
     URL = "https://prakasaka.herokuapp.com/"
 
     # OPTIONAL
-    SUDO_USERS = [578256572 734772540 759400881 594483221 623317613 649156353 656268508 334575345 225296581 621013608]  # List of id's (not usernames) for users which have sudo access to the bot.
-    SUPPORT_USERS = [578256572 734772540 759400881 594483221 623317613 649156353 656268508 334575345 225296581 621013608]  # List of id's (not usernames) for users which are allowed to gban, but can also be banned.
-    WHITELIST_USERS = [578256572 734772540 759400881 594483221 623317613 649156353 656268508 334575345 225296581 621013608]  # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
+    SUDO_USERS = [596368682,759400881,597725966,669056998,387142880,554898593]  # List of id's (not usernames) for users which have sudo access to the bot.
+    SUPPORT_USERS = []  # List of id's (not usernames) for users which are allowed to gban, but can also be banned.
+    WHITELIST_USERS = []  # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
     MAPS_API = ''
     CERT_PATH = None
     PORT = 5000
