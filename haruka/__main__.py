@@ -134,11 +134,13 @@ def send_start(bot, update):
         pass
 
     #chat = update.effective_chat  # type: Optional[Chat] and unused variable
-    text = "Hello there, my name is Storm Manager Bot!\nI'm a group manager bot maintained by [this wonderful person](@Arman_xD). I'm built in python3, using the \
-python-telegram-bot library, and am fully opensource\n\n You can find the list of available commands with /help.\n[Click here to add me in your groups](https://telegram.me/IronHyde_Bot?startgroup=add) \nIf you're enjoying using me, and/or would like to help me survive in the wild, hit /donate to help fund/upgrade my VPS!
-"
+    text = "Hey there! My name is Haruka Aya - I'm here to help you manage your groups!\n\
+Click Help button to find out more about how to use me to my full potential.\n\n"
 
-    text += "[Click here to add me in your groups](https://telegram.me/storm_manager_robot?startgroup=add)"
+    text = "Hey there! My name is Storm Manager - I'm here to help you manage your groups!\n\
+Click Help button to find out more about how to use me to my full potential.\n\n"
+
+    text += "Made with love by [this guy](https://telegram.me/Arman_xD)\n\nWant to add me to your group? [Click here!](https://telegram.me/storm_manager_robot?startgroup=add)"
 
     keyboard = [[InlineKeyboardButton(text="🛠 Control panel", callback_data="cntrl_panel_M")]]
     keyboard += [[InlineKeyboardButton(text="🇺🇸 Language", callback_data="set_lang_"), 
@@ -177,7 +179,7 @@ def control_panel(bot, update):
 
         LOGGER.info(query.data)
     else:
-        M_match = "ThugBot is best bot 🔥" #LMAO, don't uncomment
+        M_match = "StormBot is best bot 🔥" #LMAO, don't uncomment
 
     if M_match:
         text = "*Control panel* 🛠"
