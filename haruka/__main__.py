@@ -134,16 +134,21 @@ def send_start(bot, update):
         pass
 
     #chat = update.effective_chat  # type: Optional[Chat] and unused variable
-    text = "Hey There! I'm ThugBot - I'm here to help you manage your groups!\n\
-Click Help button to find out more about how to use me to my full potential.\n\n"
+    text = "Hello there, my name is Storm Manager Bot!
+
+I'm a group manager bot maintained by [this wonderful person](@Arman_xD). I'm built in python3, using the \
+python-telegram-bot library, and am fully opensource 
+
+
+You can find the list of available commands with /help.
+
+[Click here to add me in your groups](https://telegram.me/storm_manager_robot?startgroup=add)"
 
     text += "This Bot Is Managed By @Prakaska"
 
     keyboard = [[InlineKeyboardButton(text="🛠 Control panel", callback_data="cntrl_panel_M")]]
     keyboard += [[InlineKeyboardButton(text="🇺🇸 Language", callback_data="set_lang_"), 
         InlineKeyboardButton(text="❔ Help", callback_data="help_back")]]
-    keyboard += [[InlineKeyboardButton(text="📺 Download FlixTv", url=f"https://flixtv.xyz"), 
-        InlineKeyboardButton(text="♥️ Join Our Support Group", url=f"t.me/flixtv_support")]]
 
     
 
