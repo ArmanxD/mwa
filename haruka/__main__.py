@@ -134,17 +134,14 @@ def send_start(bot, update):
         pass
 
     #chat = update.effective_chat  # type: Optional[Chat] and unused variable
-    text = "Hello there, my name is Storm Manager Bot!
+    text = "Hello there, my name is Storm Manager Bot!"
 
-I'm a group manager bot maintained by [this wonderful person](@Arman_xD). I'm built in python3, using the \
-python-telegram-bot library, and am fully opensource 
+    text += "I'm a group manager bot maintained by [this wonderful person](@Arman_xD). I'm built in python3, using the \
+python-telegram-bot library, and am fully opensource" 
 
+    text += "You can find the list of available commands with /help."
 
-You can find the list of available commands with /help.
-
-[Click here to add me in your groups](https://telegram.me/storm_manager_robot?startgroup=add)"
-
-    text += "This Bot Is Managed By @Prakaska"
+    text += "[Click here to add me in your groups](https://telegram.me/storm_manager_robot?startgroup=add)"
 
     keyboard = [[InlineKeyboardButton(text="🛠 Control panel", callback_data="cntrl_panel_M")]]
     keyboard += [[InlineKeyboardButton(text="🇺🇸 Language", callback_data="set_lang_"), 
