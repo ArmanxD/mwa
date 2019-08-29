@@ -134,12 +134,9 @@ def send_start(bot, update):
         pass
 
     #chat = update.effective_chat  # type: Optional[Chat] and unused variable
-    text = "Hello there, my name is Storm Manager Bot!"
-
-    text += "I'm a group manager bot maintained by [this wonderful person](@Arman_xD). I'm built in python3, using the \
-python-telegram-bot library, and am fully opensource" 
-
-    text += "You can find the list of available commands with /help."
+    text = "Hello there, my name is Storm Manager Bot!\nI'm a group manager bot maintained by [this wonderful person](@Arman_xD). I'm built in python3, using the \
+python-telegram-bot library, and am fully opensource\n\n You can find the list of available commands with /help.\n[Click here to add me in your groups](https://telegram.me/IronHyde_Bot?startgroup=add) \nIf you're enjoying using me, and/or would like to help me survive in the wild, hit /donate to help fund/upgrade my VPS!
+"
 
     text += "[Click here to add me in your groups](https://telegram.me/storm_manager_robot?startgroup=add)"
 
